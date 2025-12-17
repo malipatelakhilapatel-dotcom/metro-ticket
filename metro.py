@@ -17,7 +17,7 @@ def generate_qr(data):
 
 #streamlit ui
 st.set_page_config(page_title="Metro Ticket Booking", page_icon="🚇")
-st.title("Metero ticket booking system with qr code")
+st.title("Metero ticket booking system with QR code 🚇")
 stations=["Ameerpet","Miyapur","LB Nagar","KPHB","JNTU"]
 name=st.text_input("Passenger Name")
 source=st.selectbox("Source Station",stations)
@@ -55,3 +55,4 @@ if st.button("Book Ticket"):
         st.write(f"Ticket: {no_tickets}")
         st.write(f"Amount Paid: {total_amount}")
         st.image(qr_bytes,width=250)
+
